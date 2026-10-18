@@ -1,6 +1,22 @@
 # Siemens S7-300 Motor Control with WinCC HMI
 
-Motor control and HMI work developed during an internship at **OCP Jorf Lasfar**. This repository documents a Siemens S7-300 hardware configuration, a TIA Portal Ladder Diagram (LAD) control program, and a WinCC operator interface.
+Motor control and HMI work developed during an internship at **OCP Jorf Lasfar**. This repository documents physical Siemens equipment, a TIA Portal Ladder Diagram (LAD) control program, and a WinCC operator interface.
+
+## Physical setup
+
+The internship photographs show a Siemens PLC cabinet with physical controls, a **SITOP PSU100M** power supply, interface relays, and a **SIMATIC HMI**. These photos provide physical context for the work; the cabinet is not presented as an exact module-for-module match to the TIA Portal rack view below.
+
+![Siemens PLC cabinet and physical controls](picture_material_software/PLC_setup.jpeg)
+
+![SITOP PSU100M and interface relays](picture_material_software/power_source_and_interface_relays.jpeg)
+
+![Physical SIMATIC HMI](picture_material_software/HMI.jpeg)
+
+## PLC configuration
+
+The TIA Portal rack configuration uses a **SIMATIC S7-300 CPU 315-2 DP** with a **CP 341 RS422/485**, **CP 343-1 Lean**, **DI 16 × 24 VDC**, and **DO 16 × 24 VDC**.
+
+![S7-300 rack configuration in TIA Portal](picture_material_software/hardware_configuration.png)
 
 ## Control logic
 
@@ -14,23 +30,9 @@ Motor control and HMI work developed during an internship at **OCP Jorf Lasfar**
 
 ![Status and fault indication logic](picture_material_software/ladder_status_fault.png)
 
-## PLC configuration and cabinet
-
-The TIA Portal rack configuration uses a **SIMATIC S7-300 CPU 315-2 DP** with a **CP 341 RS422/485**, **CP 343-1 Lean**, **DI 16 × 24 VDC**, and **DO 16 × 24 VDC**.
-
-![S7-300 rack configuration in TIA Portal](picture_material_software/hardware_configuration.png)
-
-The internship cabinet photographs show Siemens PLC equipment, a **SITOP PSU100M** power supply, interface relays, and physical controls. They provide physical context for the work; the photographed cabinet is not presented as an exact module-for-module match to the TIA Portal rack view.
-
-![Siemens PLC cabinet and physical controls](picture_material_software/PLC_setup.jpeg)
-
-![SITOP PSU100M and interface relays](picture_material_software/power_source_and_interface_relays.jpeg)
-
 ## Operator interface
 
-The physical **SIMATIC HMI** and **WinCC simulator** screens show mode selection, START/STOP controls, and motor status and fault indicators.
-
-![Physical SIMATIC HMI](picture_material_software/HMI.jpeg)
+The physical HMI above and the **WinCC simulator** screen below show mode selection, START/STOP controls, and motor status and fault indicators.
 
 ![WinCC HMI simulator](picture_material_software/wincc_hmi.png)
 
